@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ticket Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="48x48" href="img/fav.jpg">
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <header>
+        <section>
+            <nav class="navbar shadow navbar-expand-lg mb-5">
+                <div class="container py-3">
+                    <a href="index.html"><img class="fix-logo-img" src="img/bangladesh-railway.png" alt=""></a>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse justify-content-end collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0 fw-normal">
+                            <li class="nav-item">
+                                <a class="nav-link active px-4 fw-semibold" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-4 fw-semibold" aria-current="page" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-4 fw-semibold" aria-current="page"
+                                    href="register.html">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-4 fw-semibold" aria-current="page" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <!-- Main section start -->
+
+    <main>
+        <section class="container d-flex justify-content-center align-items-center">
+            <div class="p-4 col-lg-6 col-md-12">
+                <div class="search-sec container">
+                    <div class="row d-flex mb-4">
+                        <div class="col-lg-6 col-md-12">
+
+                            <label class="fw-semibold">From</label>
+                            <input type="text" class="form-control" id="" name="" placeholder="From Station" value="">
+
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <label class="fw-semibold">To</label>
+                            <input type="text" class="form-control" id="" name="" placeholder="To Station" value="">
+                        </div>
+                    </div>
+                    <div class="row d-flex">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group">
+                                <label class="fw-semibold">Date of Journey</label><br>
+                                <input type="date" class="form-control" id="date-picker-example" name="select"
+                                    placeholder="Pick a date" value="" inline="true">
+                                <i class="fas fa-calendar input-prefix"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <label class="fw-semibold">Choose a Class</label>
+                            <div class="form-group">
+                                <select name="choose_class" id="choose_class" class="form-control">
+                                    <option value="">Choose a Class</option>
+                                    <option value="AC_B">AC_B</option>
+                                    <option value="AC_S">AC_S</option>
+                                    <option value="SNIGDHA">SNIGDHA</option>
+                                    <option value="F_BERTH">F_BERTH</option>
+                                    <option value="F_SEAT">F_SEAT</option>
+                                    <option value="F_CHAIR">F_CHAIR</option>
+                                    <option value="S_CHAIR">S_CHAIR</option>
+                                    <option value="SHOVAN">SHOVAN</option>
+                                    <option value="SHULOV">SHULOV</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Search button -->
+                </div>
+                <div class="d-grid p-2 mt-3">
+                    <button class="btn text-white btn-success" type="button">Search Trains</button>
+                </div>
+            </div>
+            <!-- Search button -->
+            <!-- train image -->
+            <div class="col-6 text-center d-none d-lg-block">
+                <div class="">
+                    <img class="img-fluid p-4" src="img/train-illustration-for-train-1.jpg" alt="">
+                </div>
+            </div>
+            <!-- train image -->
+        </section>
+        <!-- End search -->
+
+        <!-- information section -->
+        <section class="container py-5">
+            <p class="text-center fw-semibold pt-5">Last updated on 25/09/2022 10:28</p>
+            <div class="row p-4">
+                <div class="col-lg-6 col-md-12 py-2">
+                    <div class="d-block p-2 text-bg-success bg-opacity-75 bg-gradient ps-4"><span
+                            class="badge text-bg-secondary">Available
+                            Tickets*</span>
+                    </div>
+                    <div class="d-block pt-3 ps-5 pe-5 text-dark text-bg-success bg-opacity-25">
+                        <div class="col-12 d-flex justify-content-between align-items-center pe-4">
+                            <p>Combined Tickets (Online & Offline)</p>
+                            <p class="fw-semibold fs-4">45585</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 py-2">
+                    <div class="d-block p-2 text-bg-danger bg-opacity-75 bg-gradient ps-4"><span
+                            class="badge text-bg-secondary">Login Members*</span>
+                    </div>
+                    <div class="d-block pt-3 ps-5 pe-5 text-dark text-bg-danger bg-opacity-25">
+                        <div class="col-12 d-flex justify-content-between align-items-center pe-4">
+                            <p>Web & App</p>
+                            <p class="fw-semibold fs-4">543071</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- information section -->
+
+        <!-- Step section end -->
+        <section class="container d-flex flex-lg-row justify-content-center align-items-center p-4 mt-5">
+            <div class="row py-5">
+                <div class="col-lg-4 col-md-8 px-5">
+                    <div class="d-flex mb-3 text-start flex-column">
+                        <img src="img/process/search.png" alt="">
+                        <div class="m-4">
+                            <h3 class="fs-4 fw-bold">Search</h3>
+                            <p>Choose your origin, destination, journey dates and search for trains</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8 px-5">
+                    <div class="d-flex mb-3 text-start flex-column">
+                        <img src="img/process/select.png" alt="">
+                        <div class="m-4">
+                            <h3 class="fs-4 fw-bold">Select</h3>
+                            <p>Select your desired trip and choose your seats</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8 px-5">
+                    <div class="d-flex mb-3 text-start flex-column">
+                        <img src="img/process/pay.png" alt="">
+                        <div class="m-4">
+                            <h3 class="fs-4 fw-bold">Pay</h3>
+                            <p>Pay for the tickets via Debit / Credit Cards or MFS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Step section end -->
+
+        <!-- Instruction section start -->
+        <section class="container">
+            <div class="row py-5">
+                <div class="col-lg-5 col-md-8 p-3">
+                    <div class="d-flex mb-3 text-start flex-column">
+                        <img src="img/instruction-secion-image.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-8 p-3">
+                    <div class="d-flex mb-3 text-start flex-column">
+                        <div class="m-4">
+                            <h2 class="fw-bold mb-4">Instructions to Purchase Tickets</h2>
+                            <ul class="instruction-list">
+                                <li class="mb-2">Tickets can be bought online five days in advance.</li>
+                                <li class="mb-2">You can pay for the tickets using mobile financial services: bKash,
+                                    Nagad,
+                                    Rocket
+                                    or
+                                    debit/credit cards: Mastercard, Visa. Other payment options will be available soon.
+                                </li>
+                                <li class="mb-2">In case of payment or transaction failure, the deducted amount would be
+                                    refunded by
+                                    your bank or
+                                    MFS provider within 8 business days.</li>
+                                <li class="mb-2">In case money has been deducted from your card / mobile wallet but you
+                                    have
+                                    not
+                                    received a
+                                    ticket confirmation, the deducted amount would be refunded by your bank or MFS
+                                    provider
+                                    within 8
+                                    business days.</li>
+                                <li class="mb-2">If you have not received your ticket copy in email, kindly check your
+                                    Spam
+                                    / Junk
+                                    folder. You
+                                    can also download your ticket copy from the purchase history of your account after
+                                    you
+                                    login.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Instruction section end -->
+
+        <!-- Trusted -->
+        <section class="container d-none d-lg-block">
+            <div class="py-5 my-5">
+                <div class="flex-column text-center mt-4">
+                    <h2 class="fs-1 fw-bold text-success">Payment Partners</h2>
+                </div>
+                <div class="text-center d-flex justify-content-evenly align-items-center m-5 p-3">
+                    <img src="img/pay/bkash.png" alt="">
+                    <img src="img/pay/nagad-32.png" alt="">
+                    <img src="img/pay/rocket.svg" alt="">
+                    <img src="img/pay/master-card.png" alt="">
+                    <img src="img/pay/visa.png" alt="">
+                </div>
+                <hr>
+
+                <div class="text-center p-5 fw-semibold">
+                    <p>* The Tickets are issued by Bangladesh Railway’s Centrally Computerized Seat Reservation &
+                        Ticketing
+                        System (CCSRTS) and Shohoz-Synesis-Vincen JV is responsible for designing, development,
+                        implementation,
+                        technical operation & maintenance of the system.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Trusted -->
+
+
+    </main>
+    <!-- Main section end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var loader = document.getElementById("preloader")
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+
+</body>
+<footer class="container-fluid text-center bg-success text-white py-2 text-center">
+    <div class="mt-4 mb-4">
+        <h2 class="mb-4">Train Travel Agency</h2>
+        <div>
+            <p>
+
+                নিরাপদ . আরামদায়ক . সাশ্রয়ী .</p>
+            <a class="text-white text-decoration-none" href="#">Privacy Ploicy</a>
+            <a class="text-white text-decoration-none" href="#">Terms of use</a>
+        </div>
+    </div>
+</footer>
+
+</html>
